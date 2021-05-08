@@ -3,14 +3,59 @@
 <head>
 	<title>Digital Clock</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		.rectangle{
+			background: gray;
+			position: relative;
+			width: 440px;
+			height: 300px;
+			border: 10px double black;
+			border-left: 10px double blue;
+			border-right: 10px double red;
+			border-bottom: 10px double blue;
+			border-top: 10px double red;
+			margin-bottom: 120px;
+			}
+		.wrapper{
+			place-items: center;
+	        height: 100px;
+	        width: 360px;
+	         cursor: default;
+	         background: linear-gradient(135deg, #14ffe9,#ffeb3b,#ff00e0);
+	         border-radius: 10px;
+	         animation: animate 1.5s linear infinite;
+	         margin-left: 50px;
+	         margin-top: 150px;
+		}
+		@media only screen and (max-width: 220px){
+			/*for mobile phones */
+			div#rectangle{
+			background: gray;
+			position: relative;
+			width: 440px;
+			height: 300px;
+			border: 10px double black;
+			border-left: 10px double blue;
+			border-right: 10px double red;
+			border-bottom: 10px double blue;
+			border-top: 10px double red;
+			margin-bottom: 300px;
+			}
+		}
+		.banner-text ul li{
+	      display: inline-block;
+	      padding: 10px 15px;
+	      text-transform: uppercase;
+	      color: #DA70D6;
+	      font-size: 30px;
+	      font-family: fantasy;
+}
+	</style>
 	
 </head>
 <body>
-	<div class="banner-text">
-		<ul>
-			<li class="clock"><u><b>Digital Clock</b></u></li>
-		</ul>
-	</div>
+	
+	
 	<div class="animation-area">
 	<ul class="box-area">
 		<li></li>
@@ -21,14 +66,22 @@
 		<li></li>
 	</ul>
 </div>
-		<div class="wrapper">
+<div class="rectangle">
+	<div class="banner-text">
+		<ul>
+			<li class="clock">Digital Clock</li>
+		</ul>
+	</div>
+	<div class="wrapper">
 			<div class="display">
 			<div id="time">00:00:00 AM</div>
 		</div>
 	<span></span>
 	<span></span>
 </div>
-
+		
+	</div>
+		
 
 </body>
 </html>
